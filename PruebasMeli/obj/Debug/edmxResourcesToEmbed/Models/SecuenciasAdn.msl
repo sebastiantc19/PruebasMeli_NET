@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebasMeliModelStoreContainer" CdmEntityContainer="PruebasMeliEntities">
+    <EntitySetMapping Name="ResultadosPruebasAdn">
+      <EntityTypeMapping TypeName="PruebasMeliModel.ResultadosPruebasAdn">
+        <MappingFragment StoreEntitySet="ResultadosPruebasAdn">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="secuencia_adn" ColumnName="secuencia_adn" />
+          <ScalarProperty Name="es_mutante" ColumnName="es_mutante" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
