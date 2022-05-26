@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebasMeliModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ResultadosPruebasAdn">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="secuencia_adn" Type="varchar(max)" Nullable="false" />
+    <Property Name="es_mutante" Type="bit" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PruebasMeliModelStoreContainer">
+    <EntitySet Name="ResultadosPruebasAdn" EntityType="Self.ResultadosPruebasAdn" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
